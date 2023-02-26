@@ -1,8 +1,27 @@
 import * as React from "react";
+import { Text } from "@chakra-ui/react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout } from "../components/Layout";
+import { Section } from "../components/Section";
 
-const IndexPage: React.FC<PageProps> = () => <Layout>Home</Layout>;
+const IndexPage: React.FC<PageProps> = () => (
+  <Layout>
+    <Section
+      heading="Excellent service"
+      subheading="We are an independent recruitment agency that helps employers to connect with exceptional talent at all levels."
+      image="https://www.annabellecharles.co.uk/wp-content/uploads/2020/05/services-img-1.jpg"
+    >
+      <Text>
+        we combine intuition and thoughtful analysis to offer our clients and
+        candidates across the UK with our personalised services. Our beauty and
+        aesthetics recruitment agency uses a thorough recruitment process to
+        bring out a skillset that proves to be invaluable for your business. We
+        know all about the multifaceted industry, from cosmetics, dietary
+        supplements, household products, to other lifestyle essentials.
+      </Text>
+    </Section>
+  </Layout>
+);
 
 export default IndexPage;
 
