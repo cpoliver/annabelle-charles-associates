@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Stack } from "@chakra-ui/react";
+import { Container, Stack } from "@chakra-ui/react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Hero } from "./Hero";
@@ -10,7 +10,9 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
     <Header />
     <Navigation />
     <Hero />
-    {children}
+    <Container maxW="1024px" alignSelf="center">
+      <Stack spacing={16}>{children}</Stack>
+    </Container>
     <Footer />
   </Stack>
 );
