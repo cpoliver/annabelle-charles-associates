@@ -2,11 +2,11 @@ import * as React from "react";
 import { Text } from "@chakra-ui/react";
 import type { HeadFC, PageProps } from "gatsby";
 import { Layout } from "../components/Layout";
-import { Section } from "../components/Section";
+import * as Section from "../components/Section";
 
 const IndexPage: React.FC<PageProps> = () => (
   <Layout>
-    <Section>
+    <Section.Container>
       <Section.Heading>Excellent service</Section.Heading>
       <Section.Subheading>
         We are an independent recruitment agency that helps employers to connect
@@ -24,7 +24,7 @@ const IndexPage: React.FC<PageProps> = () => (
           essentials.
         </Section.Content>
       </Section.Body>
-    </Section>
+    </Section.Container>
   </Layout>
 );
 
