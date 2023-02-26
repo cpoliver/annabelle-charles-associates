@@ -7,3 +7,10 @@ const ContactPage: React.FC<PageProps> = (props) => (
 );
 
 export default ContactPage;
+
+export const Head: HeadFC = () => (
+  <title>
+    Contact Us | Annabelle Charles Associates Ltd - Independent Beauty &
+    Cosmetic Recruitment Agency, London UK
+  </title>
+);
