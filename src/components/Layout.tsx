@@ -6,7 +6,7 @@ import { Hero } from "./Hero";
 import { Navigation } from "./Navigation";
 
 export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => (
-  <Stack>
+  <Stack bg="background" h="100vh">
     <Header />
     <Navigation />
     <Hero />
